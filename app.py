@@ -24,4 +24,4 @@ if file_bytes:
     submit = st.button('Predict!')
     if submit:
         pred, pred_idx, probs = learn.predict(PILImage(img))
-        st.markdown(f'Prediction: **{pred}**; Probability: **{probs[pred_idx]:.04f}**')
+        st.markdown(f'Prediction: **{pred}**; Similarity: **{probs[pred_idx]:.04f}**')
